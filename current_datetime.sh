@@ -1,0 +1,2 @@
+#!/bin/bash 
+date +%Y-%m-%d%H:%M:%S #la commande date permet d'afficher la date et l’heure actuelle %Y pour l'annee, %m pour me mois, %d pour le jour, %H pour l'heure, %M pour la Minute, %S pour la seconde.
