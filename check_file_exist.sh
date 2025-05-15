@@ -1,14 +1,9 @@
 #!/bin/bash
 
-read -p "Entrez le nom du fichier : " filename
+read -p "Entrez le chemin ou nom du fichier : " filepath
 
-if [ -z "$filename" ]; then
-    echo "Vous devez entrer un nom de fichier."
-    exit 1
-fi
-
-if [ -f "$filename" ]; then
-    echo "Le fichier '$filename' existe."
+if [ -f "$filepath" ]; then
+    echo "Le fichier '$filepath' existe."
 else
-    echo "Le fichier '$filename' n'existe pas."
+    echo "Le fichier '$filepath' n'existe pas."
 fi
