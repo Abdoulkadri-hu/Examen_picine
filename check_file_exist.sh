@@ -1,7 +1,11 @@
 #!/bin/bash
 
-echo -n "Entrez le nom du fichier : "
-read filename
+read -p "Entrez le nom du fichier : " filename
+
+if [ -z "$filename" ]; then
+    echo "Vous devez entrer un nom de fichier."
+    exit 1
+fi
 
 if [ -f "$filename" ]; then
     echo "Le fichier '$filename' existe."
