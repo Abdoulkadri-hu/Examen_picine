@@ -1,14 +1,12 @@
-#!/bin/bash
-
-# Afficher un message
+#!/bin/bash 
 echo -n "Entrez le nom du fichier : "
 
 # Lire l'entrée utilisateur sans -p
-read fichier
+read filename
 
 # Vérifier si le fichier existe
-if [ -f "$fichier" ]; then
-    echo "Le fichier '$fichier' existe."
+if [ -f "$filename" ]; then
+    echo "Le fichier '$filename' existe."
 else
-    echo "Le fichier '$fichier' n'existe pas."
+    echo "Le fichier '$filename' n'existe pas."
 fi
