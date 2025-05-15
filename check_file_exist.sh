@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -n "Entrez le nom du fichier : "
+echo -p "Entrez le nom du fichier : "
 read filename
 
 # Vérifier si le fichier existe
